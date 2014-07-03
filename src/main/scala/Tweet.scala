@@ -1,0 +1,1 @@
+case class Tweet(author:String, text:String) {}
