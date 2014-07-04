@@ -1,6 +1,6 @@
 import akka.actor.ActorSystem
 import akka.testkit._
-import org.scalatest._
+import org.scalatest.{Matchers, FlatSpec}
 
 class TwitterSpec extends FlatSpec with Matchers {
 

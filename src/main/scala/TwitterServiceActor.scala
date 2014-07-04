@@ -1,13 +1,7 @@
 import spray.routing._
 
-class TwitterServiceActor extends HttpServiceActor {
+class TwitterServiceActor extends HttpServiceActor with Routes {
 
-  def receive = runRoute {
-    path("tweets") {
-      get {
-        complete("test tweet")
-      }
-    }
-  }
+  def receive = runRoute(tweetsRoute)
 
 }
